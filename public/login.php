@@ -52,8 +52,6 @@
     if(is_object($validLogin)) {
         // successful login
         $_SESSION['user'] = serialize($validLogin);
-        print_r($validLogin);
-        die();
     } else {
         // bad login credentials
         unset($_SESSION['user']);
