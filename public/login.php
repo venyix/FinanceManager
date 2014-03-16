@@ -51,15 +51,9 @@
     
     if(is_object($validLogin)) {
         // successful login
-        $_SESSION['user']['valid'] = true;
-        $_SESSION['user']['id'] = $validLogin->getUserId();
-        $_SESSION['user']['username'] = $validLogin->getUsername();
-        $_SESSION['user']['password'] = $validLogin->getPassword();
-        $_SESSION['user']['first_name'] = $validLogin->getFirstName();
-        $_SESSION['user']['last_name'] = $validLogin->getLastName();
-        $_SESSION['user']['income'] = $validLogin->getIncome();
-        $_SESSION['user']['pay_period'] = $validLogin->getPayPeriod();
-        $_SESSION['user']['email'] = $validLogin->getEmailAddress();
+        $_SESSION['user'] = serialize($validLogin);
+        print_r($validLogin);
+        die();
     } else {
         // bad login credentials
         unset($_SESSION['user']);

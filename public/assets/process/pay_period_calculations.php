@@ -7,10 +7,15 @@
  */
 
     function getWeeklySavings() {
-        $income = $_SESSION['user']['income'];
-        $weeklyIncome = $income / 50;
-        $tenPercent = $weeklyIncome * .1;
-        
-        return round($tenPercent, 2);
+        if(isset($_SESSION['user'])) {
+            $user = $_SESSION['user'];
+            $user = unserialize($user);
+            $income = $user->getIncome();
+            $weeklyIncome = $income / 50;
+            $tenPercent = $weeklyIncome * .1;
+
+            return round($tenPercent, 2);
+        }
+        return -1;
     }
 ?>

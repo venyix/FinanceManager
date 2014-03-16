@@ -1,3 +1,4 @@
+<?php $user = unserialize($_SESSION['user']) ?>
 <table border ='0' width='100%' cellpadding='0' cellspacing='0'>
     <tr>
         <form id="accountForm" action="" method="post">
@@ -8,7 +9,7 @@
         </td>
         <td id='information'>
             <input type='text' id='username' class='readOnly' 
-            value='<?php echo $_SESSION['user']['username']
+            value='<?php echo $user->getUsername()
             ?>' readonly/>
         </td>
     </tr>
@@ -20,7 +21,7 @@
         </td>
         <td id='information'>
             <input type='text' id='email'
-            value='<?php echo $_SESSION['user']['email']
+            value='<?php echo $user->getEmailAddress()
             ?>' />
         </td>
     </tr>
@@ -33,7 +34,7 @@
         </td>
         <td id='information'>
             <input type='text' id='first_name'
-            value='<?php echo $_SESSION['user']['first_name']
+            value='<?php echo $user->getFirstName()
             ?>' />
         </td>
     </tr>
@@ -45,7 +46,7 @@
         </td>
         <td id='information'>
             <input type='text' id='last_name'
-            value='<?php echo $_SESSION['user']['last_name']
+            value='<?php echo $user->getLastName()
             ?>' />
         </td>
     </tr>
@@ -57,7 +58,7 @@
         </td>
         <td id='information'>
             <input type='text' id='income'
-            value='<?php echo $_SESSION['user']['income']
+            value='<?php echo $user->getIncome()
             ?>' />
         </td>
     </tr>
@@ -69,7 +70,7 @@
         </td>
         <td id='information'>
             <?php
-                switch($_SESSION['user']['pay_period']) {
+                switch($user->getPayPeriod()) {
                     case 'DAILY':
                         $daily = "selected='selected'";$weekly = '';
                         $bi_weekly='';$semi_monthly='';$monthly = '';

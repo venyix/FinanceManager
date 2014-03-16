@@ -1,6 +1,6 @@
 <?php
     // check to see if a user is logged in
-    if(isset($_SESSION['user']['valid'])) {
+    if(isset($_SESSION['user'])) {
         if($_SESSION['user']['valid']) {
             
             ?>

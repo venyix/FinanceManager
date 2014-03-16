@@ -55,10 +55,16 @@
                     <span id="loginHeader">
                         Logged in as 
                         <?php
-                            if(isset($_SESSION['user']['first_name']) &&
-                                    isset($_SESSION['user']['last_name'])) {
-                            echo $_SESSION['user']['first_name']
-                                . ' ' . $_SESSION['user']['last_name'];
+                            if(isset($_SESSION['user'])) {
+                                $user = $_SESSION['user'];
+                                $user = unserialize($user);
+                                $first_name = $user->getFirstName();
+                                $last_name = $user->getLastName();
+                                if(isset($first_name) &&
+                                        isset($last_name)) {
+                                echo $first_name
+                                    . ' ' . $last_name;
+                                }
                             }
                         ?>
                     </span>

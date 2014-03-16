@@ -44,16 +44,13 @@
                 'pass' => $userObject->getPassword()
                 ));
         
-        $validUser = new user();
+        $validUser = NULL;
         foreach($query as $row) {
-            $validUser->setUserId($row['id']);
-            $validUser->setUsername($userObject->getUsername());
-            $validUser->setPassword("Hidden");
-            $validUser->setFirstName($row['first_name']);
-            $validUser->setEmailAddress($row['email']);
-            $validUser->setLastName($row['last_name']);
-            $validUser->setIncome($row['income']);
-            $validUser->setPayPeriod($row['pay_period']);
+            $validUser = new user(
+                    $row['id'], $row['username'], 'Hidden', $row['first_name'],
+                    $row['last_name'], $row['income'], $row['pay_period'],
+                    $row['email']
+                    );
         }
         if($validUser->getUserId() > 0 && $validUser->getPassword() == 'Hidden') {
             return $validUser;

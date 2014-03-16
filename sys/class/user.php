@@ -15,7 +15,7 @@
  *
  * @author Phillip
  */
-class user extends db_connect {    
+class user {    
     private $userId;
     private $username;
     private $password;
@@ -27,8 +27,7 @@ class user extends db_connect {
     
     public function __construct($userId=NULL, $username=NULL, $password=NULL,
             $firstName=NULL, $lastName=NULL, $income=NULL,
-                $payPeriod=NULL, $email=NULL, $dbo = NULL) {
-        parent::__construct($dbo);
+                $payPeriod=NULL, $email=NULL) {
         $this->userId = $userId;
         $this->username = $username;
         $this->password = $password;
