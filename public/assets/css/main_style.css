@@ -1,0 +1,212 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 23, 2014, 10:12:08 PM
+    Author     : Phillip
+*/
+a:link {
+    color: #999;
+    font-size: 12px;
+    font-family: verdana;
+    text-decoration: none;
+}a:hover {
+    color: #ddd;
+}
+a:visited {
+    color: #ccc;
+}
+body {
+    background-image: url('../imgs/background_small.png');
+    background-color: #1b1f49;
+    background-repeat: repeat-x;
+    height: 100%;
+}
+#bodyContainer {
+    min-height: 100%;
+    padding-bottom: 16%;
+}
+#logo {
+    background-image: url('../imgs/logo.png');
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 66px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+/* ----------------------- START TOP RIGHT LOGIN BOX ----------------------- */
+
+#loginBox {
+    background-image: url('../imgs/login_box.png');
+    width: 261px;
+    height: 134px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center; 
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+#logoutBox {
+    background-image: url('../imgs/login_box.png');
+    width: 261px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;   
+    box-shadow: 3px 3px 5px #222;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+span#loginHeader {
+    color: #fff;
+    font-family: "Arial", "Verdana", "Times New Roman";
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+td#loginHeader {
+    color: #fff;
+    font-family: "Arial", "Verdana", "Times New Roman";
+    font-size: 14px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#loginLabel {
+    color: #fff;
+    font-family: "Arial", "Verdana", "Times New Roman";
+    font-size: 12px;
+}
+.loginInput {
+    margin: 8px;
+}
+#loginSubmit {
+}
+/* ----------------------- END TOP RIGHT LOGIN BOX ----------------------- */
+
+#slogan {
+    background-image: url('../imgs/slogan.png');
+    width: 386px;
+    height: 40px;
+    margin-left: 50px;
+}
+
+/* ----------------------- START NAV BAR ----------------------- */
+#navBar {
+    background-image: url('../imgs/nav_bar_smaller.png');
+    height: 39px;
+    background-repeat: repeat-x;
+    margin-top: 10px;
+}
+#navTable {
+    padding-left: 150px;
+}
+#homeButton {
+    background-image: url('../imgs/home_button_depressed.png');
+    width: 84px;
+    height: 39px;
+    padding-right: 25px;
+    background-repeat: no-repeat;
+}
+#homeButton:active {
+    background-image: url('../imgs/home_button_normal.png');
+    width: 84px;
+    height: 39px;
+    padding-right: 25px;
+    background-repeat: no-repeat;
+}
+#myAccountButton {
+    background-image: url('../imgs/my_account_button_depressed.png');
+    width: 168px;
+    height: 39px;
+    padding-right: 25px;
+    background-repeat: no-repeat;
+}
+#myAccountButton:active {
+    background-image: url('../imgs/my_account_button_normal.png');
+    width: 168px;
+    height: 39px;
+    padding-right: 25px;
+    background-repeat: no-repeat;
+}
+#myBudgetButton {
+    background-image: url('../imgs/my_budget_button_depressed.png');
+    width: 168px;
+    height: 39px;
+    padding-right: 25px;
+    background-repeat: no-repeat;
+}
+#myBudgetButton:active {
+    background-image: url('../imgs/my_budget_button_normal.png');
+    width: 168px;
+    height: 39px;
+    padding-right: 25px;
+    background-repeat: no-repeat;
+}
+/* ----------------------- END NAV BAR ----------------------- */
+
+/* ----------------------- START BODY CONTENT ----------------------- */
+#pageHeader {
+    font-family: Arial, Verdana, "Times New Roman";
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}
+#blurb {
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #FFF;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    box-shadow: 2px 2px 3px #111;
+    padding: 15px;
+}
+.constructionBlurb {
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #FFF;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    box-shadow: 2px 2px 3px #111;
+    padding: 25px;
+    font-family: arial;
+    font-size: 18px;
+}
+#blurbContent {
+}
+#blurbList {
+    font-family: verdana, arial, "times new roman";
+    font-size: 14px;
+}
+#footer {
+    background-image: url('../imgs/nav_bar_smaller.png');
+    background-repeat: repeat-x;
+    
+    width: 96%;
+    height: 25px;
+    
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 10px;
+    
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top: 1px solid #DDDr;
+    
+    position: absolute;
+    bottom: 0;
+    
+    text-align: center;
+    font-family: verdana, arial;
+    font-size: 12px;
+    color: #fff;
+}
+/* ----------------------- END BODY CONTENT ----------------------- */

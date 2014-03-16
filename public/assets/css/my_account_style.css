@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 13, 2014, 9:38:59 PM
+    Author     : Phillip
+*/
+
+td#informationLabel {
+    text-align: right;
+    width: 50%;
+    padding-right: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+td#information {
+    text-align: left;
+    width: 50%;
+    padding-left: 75px;
+}
+
+input.readOnly {
+    background-color: #ddd;
+    text-align:center;
+}
+input {
+    text-align:center;
+}
